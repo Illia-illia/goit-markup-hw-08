@@ -1,0 +1,38 @@
+/* ===========HEADER=========== */
+.header{
+    border-bottom: 1px solid $border-accent;
+}
+
+.header__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header__item:not(:last-child) {
+    margin-right: $margin50;
+}
+
+.header__logo {
+    margin-right: 93px;
+}
+
+/* Menu nav */
+.menu__list {
+    display: flex;
+}
+
+.menu__link {
+    transition: color $duration250ms $time-function;
+
+    display: block;
+    padding-top: $padding32;
+    padding-bottom: $padding32;
+
+    @include font(500, 14px, 1.14, 0.02em);
+
+    color: $main-text;
+}
+    .menu__link:hover,
+    .menu__link:focus {
+        color: $link-accent;
+}

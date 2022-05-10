@@ -1,0 +1,20 @@
+/* =============FOOTER====================== */
+.footer {
+    background-color: $secondary-back;
+    padding-top: $padding60;
+    padding-bottom: $padding60;
+}
+
+.footer__wrap {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: $margin20;
+}
+
+.footer__subscribe {
+    margin-left: $margin93;
+}

@@ -1,0 +1,31 @@
+/* ===========HERO=========== */
+.hero {
+    max-width: 1600px;
+    height: 600px;
+    background-color: $hero-bg;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: $padding200;
+    padding-bottom: $padding200;
+
+    text-align: center;
+}
+
+.hero__capt {
+    max-width: 700px;
+    margin-right: auto;
+    margin-bottom: $margin30;
+    margin-left: auto;
+
+    @include font(900, 44px, 1.36, 0.06em);
+    text-transform: uppercase;
+
+    color: $secondary-accent;
+}

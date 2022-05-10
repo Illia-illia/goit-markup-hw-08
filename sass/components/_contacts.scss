@@ -1,0 +1,31 @@
+/* Contacts */
+.contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+
+    &__link:hover,
+    &__link:focus {
+        color: $link-accent;
+    }
+}
+
+.contacts__link {
+    transition: color $duration250ms $time-function;
+
+    padding-top: $padding32;
+    padding-bottom: $padding32;
+
+    @include font(500, 14px, 1.14, 0.02em);
+
+    color: $secondary-text;
+}
+
+.contacts__icon {
+    fill: currentColor;
+    vertical-align: middle;
+}
+
+.header__icon{
+    margin-right: $margin10;
+}

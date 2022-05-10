@@ -1,0 +1,39 @@
+.footer__join {
+    margin-left: 70px;
+}
+
+.join__title {
+    @include font(700, 14px, 1.14, null);
+
+    text-transform: uppercase;
+    color: $secondary-accent;
+    margin-bottom:$margin20;
+}
+
+.join__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join__item+.join__item {
+    margin-left: $margin10;
+}
+
+.join__link {
+    transition: background-color $duration250ms $time-function;
+
+    width: 44px;
+    height: 44px;
+    background-color: $bg-soc-link;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: $secondary-accent;
+}
+
+.join__link:hover,
+.join__link:focus {
+    background-color: $link-accent;
+}

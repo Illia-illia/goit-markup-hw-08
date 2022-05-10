@@ -1,0 +1,120 @@
+/* ==========Portfolio =================*/
+.works {
+    padding-top: $padding94;
+    padding-bottom: $padding94;
+
+    &__btn:hover,
+    &__btn:focus {
+        background: $link-accent;
+        color: $secondary-accent;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.works__list {
+    display: flex;
+    margin-bottom: $margin50;
+    justify-content: center;
+}
+
+.works__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.works__btn {
+    transition: background $duration250ms $time-function,
+        color $duration250ms $time-function,
+        box-shadow $duration250ms $time-function;
+
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    border-radius: 4px;
+    border: $back-button;
+
+    @include font(500, 16px, 1.62, 0.03em);
+    cursor: pointer;
+
+    background: $back-button;
+    color: $main-text;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * $padding30);
+    margin-bottom: calc(-1 * $padding30);
+
+    &__link:hover,
+    &__link:focus {
+        display: block;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.gallery__item {
+    flex-basis: calc(100% / 3 - $padding30);
+    margin-right: $padding30;
+    margin-bottom: $padding30;
+}
+
+.gallery__link {
+    transition: box-shadow $duration250ms $time-function;
+}
+
+.gallery__wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery__cover-text {
+    transform: translateY(100%);
+    transition: transform $duration250ms $time-function;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+
+    @include font(400, 18px, 1.56, null);
+
+    background-color: $portfolio-bg;
+    color: $secondary-accent;
+
+    .gallery__link:hover &,
+    .gallery__link:focus & {
+        transform: translateY(0);
+    }
+}
+
+.gallery__ptext {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border-right: 1px solid $sec-border-accent;
+    border-bottom: 1px solid $sec-border-accent;
+    border-left: 1px solid $sec-border-accent;
+}
+
+.gallery__capt {
+    color: $main-text;
+
+    @include font(700, 18px, 2, 0.06em);
+
+    margin-bottom: 4px;
+}
+
+.gallery__text {
+    color: $secondary-text;
+
+    @include font(400, 16px, 1.87, null);
+}

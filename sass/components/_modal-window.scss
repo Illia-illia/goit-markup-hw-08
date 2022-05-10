@@ -1,0 +1,40 @@
+/* ==========MODAL=WINDOW========== */
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotateY(360deg) rotateX(360deg) translate(-50%, -50%) scale(1);
+    transition: transform 1000ms;
+    width: 528px;
+    min-height: 581px;
+    background-color: $secondary-accent;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    .backdrop.is-hidden & {
+        top: 50%;
+        left: 50%;
+        transform: rotateY(180deg) rotateX(0) translate(-50%, -50%) scale(0.1);
+        }
+
+    &__icon-close:focus,
+    &__icon-close:hover {
+        fill: $link-accent;
+    }
+}
+
+.modal__icon-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid $bg-modal-sec;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    transition: fill $duration250ms $time-function;
+}

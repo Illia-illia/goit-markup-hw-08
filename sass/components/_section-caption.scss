@@ -1,0 +1,8 @@
+.section-caption {
+    margin-bottom: $margin50;
+
+    @include font(null, 36px, 1.16, null);
+    text-align: center;
+
+    color: $main-text;
+}

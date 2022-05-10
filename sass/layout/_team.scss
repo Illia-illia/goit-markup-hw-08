@@ -1,0 +1,74 @@
+/* ==========Section our team ===================*/
+.team {
+  background-color: $back-button;
+  padding-top: $padding94;
+  padding-bottom: $padding94;
+
+  &__soc-link:hover,
+  &__soc-link:focus {
+    background-color: $link-accent;
+    fill: $secondary-accent;
+  }
+}
+
+.team__list {
+  display: flex;
+  margin-right: calc(-1 * $padding30);
+}
+
+.team__item {
+  flex-basis: calc(100% / 4 - $padding30);
+  margin-right: $padding30;
+  width: 270px;
+  height: 428px;
+  background-color: $secondary-accent;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team__padding {
+  text-align: center;
+  padding: $padding30;
+
+}
+
+.team__caption {
+  color: $main-text;
+
+  @include font(500, 16px, 1.19, null);
+
+  margin-bottom: $margin10;
+}
+
+.team__text {
+  color: $secondary-text;
+
+  @include font(400, 16px, 1.19, null);
+
+  margin-bottom: $margin16;
+}
+
+.team__soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team__soc-item + .team__soc-item {
+  margin-left: $margin10;
+}
+
+.team__soc-link {
+  transition: background-color $duration250ms $time-function,
+    fill $duration250ms $time-function;
+
+  width: 44px;
+  height: 44px;
+  background-color: $secondary-accent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: $icon-color;
+}

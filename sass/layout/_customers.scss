@@ -1,0 +1,34 @@
+/* ============Regular customers===========*/
+.customers {
+    background-color: $secondary-accent;
+    padding-top: $padding94;
+    padding-bottom: $padding94;
+
+    &__link:hover {
+        fill: $link-accent;
+        border: 1px solid $link-accent;
+    }
+}
+
+.customers__list {
+    display: flex;
+    justify-content: center;
+}
+
+.customers__item+.customers__item {
+    margin-left: $margin30;
+}
+
+.customers__link {
+    transition: fill $duration250ms $time-function,
+        border $duration250ms $time-function;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: $icon-color;
+}

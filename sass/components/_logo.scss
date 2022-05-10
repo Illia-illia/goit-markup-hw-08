@@ -1,0 +1,17 @@
+/* Logo */
+.logo {
+    color: $link-accent;
+
+    font-family: 'Raleway', sans-serif;
+
+    @include font(null, 26px, 1.19, null);
+}
+
+/* Logo accent */
+.logo--black {
+    color: $firstly-accent;
+}
+
+.logo--white {
+    color: $secondary-accent;
+}

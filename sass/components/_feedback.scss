@@ -1,0 +1,72 @@
+.feedback {
+    padding: $margin40;
+
+    &__input:focus {
+        border-color: $link-accent;
+    }
+
+    &__text::placeholder {
+    
+        @include font(null, 14px, 1.14, 0.01em);
+
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.feedback__title {
+    margin-bottom: $margin12;
+
+    @include font(700, 20px, 1.15, null);
+
+    color: $main-text;
+}
+
+.feedback__label {
+    @include font(null, 12px, 1.16, 0.01em);
+
+    color: $secondary-text;
+}
+
+.feedback__wrap {
+    position: relative;
+    margin-bottom: $margin12;
+}
+
+.feedback__input {
+    width: 100%;
+    height: $margin40;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: $padding32;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+}
+
+.feedback__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+
+    .feedback__input:focus + & {
+        fill: $link-accent;
+    }
+}
+
+.feedback__text {
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: $margin12 $margin16;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    resize: none;
+}
+
+.feedback__btn {
+    display: block;
+    margin: 0 auto;
+}

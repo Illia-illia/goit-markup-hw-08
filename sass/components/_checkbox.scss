@@ -1,0 +1,46 @@
+.checkbox__label,
+.checkbox__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include font(null, 14px, 1.71, null);
+
+    color: $secondary-text;
+}
+
+.checkbox__link {
+    color: $link-accent;
+}
+
+.checkbox__label {
+    margin-top: $margin20;
+    margin-bottom: $margin20;
+}
+
+.checkbox__wrap {
+    content: '';
+    
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    border: 2px solid $main-text;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .checkbox:checked + .checkbox__label & {
+            background-color: $link-accent;
+            border: none;
+        }
+}
+
+.checkbox__icon {
+    fill: transparent;
+    cursor: pointer;
+
+    .checkbox:checked + .checkbox__label & {
+            fill: #EEEEEE;
+        }
+}

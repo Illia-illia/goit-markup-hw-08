@@ -1,0 +1,41 @@
+/* =========Section our advantage========== */
+.advantage {
+    padding-top: $padding94;
+}
+
+.advantage__list {
+    display: flex;
+}
+
+.advantage__item:not(:last-child) {
+    margin-right: $padding30;
+}
+
+.advantage__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 270px;
+    height: 120px;
+
+    background-color: $back-button;
+}
+
+.advantage__caption {
+    margin-top: $margin30;
+    margin-bottom: $margin10;
+
+    @include font(null, 14px, 1.14, null);
+    text-transform: uppercase;
+
+    color: var(--main-text);
+}
+
+.advantage__text {
+    max-width: 270px;
+
+    @include font(400, 14px, 1.71, null);
+
+    color: $secondary-text;
+}
