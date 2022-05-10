@@ -4,7 +4,19 @@
 
     font-family: 'Raleway', sans-serif;
 
-    @include font(null, 26px, 1.19, null);
+    @include font(700, 24px, 28/24, null);
+
+    @media screen and (min-width: $mobile) {
+        
+    }
+
+    @media screen and (min-width: $tablet) {
+        
+    }
+
+    @media screen and (min-width: $desktop) {
+        
+    }
 }
 
 /* Logo accent */
