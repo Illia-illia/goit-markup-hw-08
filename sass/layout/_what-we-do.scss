@@ -1,6 +1,9 @@
 /* =============What we do=================== */
 .what-we-do {
-    padding-top: $padding94;
+    display: none;
+    @include desktop{
+        display: flex;
+    }
     padding-bottom: $padding94;
 }
 

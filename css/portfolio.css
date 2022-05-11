@@ -503,16 +503,7 @@ ul {
   padding-bottom: 60px;
 }
 
-.footer__wrap {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer__logo {
   display: block;
   margin-bottom: 20px;
-}
-
-.footer__subscribe {
-  margin-left: 93px;
 }/*# sourceMappingURL=portfolio.css.map */

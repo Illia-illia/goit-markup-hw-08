@@ -1,8 +1,11 @@
 /* ==========Section our team ===================*/
 .team {
   background-color: $back-button;
-  padding-top: $padding94;
-  padding-bottom: $padding94;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+  // padding-top: $padding94;
+  // padding-bottom: $padding94;
 
   &__soc-link:hover,
   &__soc-link:focus {
@@ -12,15 +15,28 @@
 }
 
 .team__list {
-  display: flex;
-  margin-right: calc(-1 * $padding30);
+  @include tablet{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * $padding30);
+    margin-bottom: calc(-1 * $padding30);
+  }
 }
 
 .team__item {
-  flex-basis: calc(100% / 4 - $padding30);
-  margin-right: $padding30;
-  width: 270px;
-  height: 428px;
+  max-width: 450px;
+  margin-bottom: $padding30;
+  @include tablet{
+    max-width: 354px;
+    flex-basis: calc(100% / 2 - $padding30);
+    margin-right: $padding30;
+  }
+  @include desktop{
+    width: 270px;
+    height: 428px;
+    flex-basis: calc(100% / 4 - $padding30);
+  }
+
   background-color: $secondary-accent;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -31,13 +47,12 @@
 .team__padding {
   text-align: center;
   padding: $padding30;
-
 }
 
 .team__caption {
   color: $main-text;
 
-  @include font(500, 16px, 1.19, null);
+  @include font(500, 16px, 19/16, null);
 
   margin-bottom: $margin10;
 }
@@ -45,7 +60,7 @@
 .team__text {
   color: $secondary-text;
 
-  @include font(400, 16px, 1.19, null);
+  @include font(400, 16px, 19/16, null);
 
   margin-bottom: $margin16;
 }
