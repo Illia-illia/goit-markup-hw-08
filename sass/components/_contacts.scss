@@ -1,8 +1,17 @@
 /* Contacts */
 .contacts {
-    display: flex;
+    display: none;
+
+    @include tablet {
+        display: block;
+    }
+
+    @include desktop {
+        display: flex;
+        align-items: center;
+    }
+
     margin-left: auto;
-    align-items: center;
 
     &__link:hover,
     &__link:focus {
@@ -13,12 +22,27 @@
 .contacts__link {
     transition: color $duration250ms $time-function;
 
-    padding-top: $padding32;
-    padding-bottom: $padding32;
+    @include tablet{
+        @include font(500, 12px, 14/12, 0.02em);
+    }
 
-    @include font(500, 14px, 1.14, 0.02em);
-
+    @include desktop{
+        @include font(null, 14px, 16/14, null);
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
     color: $secondary-text;
+}
+
+.contacts__item:not(:last-child) {
+    @include tablet{
+        margin-bottom: $margin10;
+    }
+    
+    @include desktop{
+        margin-right: $margin50;
+        margin-bottom: 0;
+    }
 }
 
 .contacts__icon {
@@ -27,5 +51,11 @@
 }
 
 .header__icon{
-    margin-right: $margin10;
+    @include tablet{
+        margin-right: 8px;
+    }
+
+    @include desktop{
+        margin-right: $margin10;
+    }
 }

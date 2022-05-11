@@ -13,12 +13,58 @@
 }
 
 .header__logo {
-    margin-right: 93px;
+    margin-right: auto;
+
+    @include tablet{
+        margin-right: 88px;
+    }
+
+    @include desktop{
+        margin-right: 93px;
+    }
 }
 
 /* Menu nav */
+.menu__button
+{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:focus{
+        fill: $link-accent;
+    }
+
+    @include tablet{
+        display: none;
+    }
+}
+
+.menu__icon-close{
+    display: none;
+}
+
+.menu__button.is-open{
+    .menu__icon-close{
+        display: block;
+    }
+
+    .menu__icon-open{
+        display: none;
+    }
+}
+
 .menu__list {
-    display: flex;
+    display: none;
+    
+    @include tablet{
+        display: flex;
+    }
+    
 }
 
 .menu__link {

@@ -7,7 +7,7 @@
   padding: 10px $padding32;
   min-width: 200px;
   
-  @include font(700, 16px, 1.87, 0.06em);
+  @include font(700, 16px, 30/16, 0.06em);
   cursor: pointer;
 
   background-color: $link-accent;
@@ -18,5 +18,3 @@
       background-color: $secbtn-color;
     }
 }
-
-
