@@ -1,17 +1,28 @@
 .subscribe__title {
-    display: flex;
+    display: block;
+    // display: flex;
 
-    @include font(700, 14px, 1.14, null);
+    @include font(700, 14px, 16/14, null);
     text-transform: uppercase;
+    text-align: center;
 
     color: $secondary-accent;
     margin-bottom: $margin20;
 }
 
 .subscribe__input {
-    padding-left: $margin16;
-    width: 358px;
+    width: 100%;
+    @include tablet{
+        display: block;
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    // padding-left: $margin16;
+    // width: 358px;
     height: 50px;
+    margin-bottom: $margin20;
+
     background-color: transparent;
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -26,10 +37,13 @@
 }
 
 .footer__btn{
-    margin-left: $margin12;
+    // margin-left: $margin12;
 }
 
 .subscribe__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 29px;
     padding-right: 28px;
 
@@ -38,9 +52,9 @@
 }
 
 .footer__send{
-    margin-left: $margin10;
+    // margin-left: $margin10;
 }
 
 .subscribe__send {
-    vertical-align: middle;
+    // vertical-align: middle;
 }

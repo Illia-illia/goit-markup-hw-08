@@ -1,14 +1,17 @@
 .adress__item:not(:last-child) {
-    margin-bottom: $margin9;
+    margin-bottom: 8px;
+    // margin-bottom: $margin9;
 }
 
 .adress__link {
     transition: color $duration250ms $time-function;
 
-    display: inline-block;
+    display: block;
+    // display: inline-block;
 
     font-style: normal;
-    @include font(400,14px,1.71,null);
+    @include font(400, 14px, 24/14, null);
+    text-align: center;
 
     color: $adress-color;
     
