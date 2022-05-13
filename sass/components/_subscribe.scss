@@ -18,8 +18,11 @@
         margin-left: auto;
         margin-right: auto;
     }
-    // padding-left: $margin16;
-    // width: 358px;
+    @include desktop {
+        display: inline;
+        padding-left: $margin16;
+        width: 358px;
+    }
     height: 50px;
     margin-bottom: $margin20;
 
@@ -36,14 +39,17 @@
     }
 }
 
-.footer__btn{
-    // margin-left: $margin12;
-}
-
 .subscribe__btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+    @include desktop {
+        display: inline;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     padding-left: 29px;
     padding-right: 28px;
 
@@ -51,10 +57,20 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.footer__btn{
+    @include desktop{
+        margin-left: $margin12;
+    }
+}
+
 .footer__send{
-    // margin-left: $margin10;
+    @include desktop{
+        margin-left: $margin10;
+    }
 }
 
 .subscribe__send {
-    // vertical-align: middle;
+    @include desktop {
+        vertical-align: middle;
+    }
 }

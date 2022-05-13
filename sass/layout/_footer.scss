@@ -6,8 +6,20 @@
 }
 
 .footer__wrap {
-    // display: flex;
-    // align-items: baseline;
+    @include tablet{
+        .footer__wrap--tablet {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-around;
+            margin-bottom: 60px;
+        }
+    }
+
+    @include desktop{
+    display: flex;
+    align-items: baseline;
+    }
+
 }
 
 .footer__logo {
@@ -18,5 +30,7 @@
 }
 
 .footer__subscribe {
-    // margin-left: $margin93;
+    @include desktop{
+        margin-left: 70px;
+    }
 }

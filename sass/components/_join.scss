@@ -1,5 +1,11 @@
 .footer__join {
-    // margin-left: 70px;
+    @include tablet {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    @include desktop {
+        margin-left: 70px;
+    }
     margin-top: 60px;
     margin-bottom: 60px;
 }

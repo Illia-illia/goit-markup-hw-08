@@ -17,18 +17,11 @@
         <div class="container header__wrap">
             <a href="./" class="logo header__logo link" lang="en">Web<span class="logo--black">Studio</span></a>
                 <nav class="menu">
-                    <button type="button" class="menu__button" aria-expanded="false" data-menu-button>
-                        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                            <use class="menu__icon-open" href="./images/icons.svg#icon-menu_open"></use>
-                            <use class="menu__icon-close" href="./images/icons.svg#icon-menu_close"></use>
-                        </svg>
-                    </button>
                         <ul class="menu__list list">
                             <li class="header__item"><a href="./" class="menu__link link active">Студия</a></li>
                             <li class="header__item"><a href="./portfolio.html" class="menu__link link">Портфолио</a></li>
                             <li class="header__item"><a href="./" class="menu__link link">Контакты</a></li>
                         </ul>
-                    
                 </nav>
                         <ul class="contacts list">
                             <li class="contacts__item">
@@ -47,6 +40,37 @@
                                 </a>
                             </li>
                         </ul>
+                        <button type="button" class="menu__button" aria-expanded="false" data-menu-button>
+                            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                                <use class="menu__icon-open" href="./images/icons.svg#icon-menu_open"></use>
+                            </svg>
+                        </button>
+                        <div class="mob-menu">
+                                <button type="button" class="mob-menu__button">
+                                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                                        <use class="mob-menu__icon-close" href="./images/icons.svg#icon-menu_close"></use>
+                                    </svg>
+                                </button>
+                                <ul class="mob-menu__list list">
+                                    <li class="mob-menu__item"><a href="./" class="mob-menu__link link">Студия</a></li>
+                                    <li class="mob-menu__item"><a href="./portfolio.html" class="mob-menu__link link">Портфолио</a></li>
+                                    <li class="mob-menu__item"><a href="./" class="mob-menu__link link">Контакты</a></li>
+                                </ul>
+                                <ul class="mob-menu-contacts list">
+                                    <li class="mob-menu-contacts__item">
+                                        <a href="tel:+380961111111" class=" mob-menu-contacts__link link">+38 096 111 11 11</a>
+                                    </li>
+                                    <li class="mob-menu-contacts__item">
+                                        <a href="mailto:info@devstudio.com" class=" mob-menu-contacts__link link" lang="en">info@devstudio.com</a>
+                                    </li>
+                                </ul>
+                                <ul class="mob-menu-soc__list list">
+                                    <li class="mob-menu-soc__item"><a class="mob-menu-soc__link link" href="#">Instagram</a></li>
+                                    <li class="mob-menu-soc__item"><a class="mob-menu-soc__link link" href="#">Twitter</a></li>
+                                    <li class="mob-menu-soc__item"><a class="mob-menu-soc__link link" href="#">Facebook</a></li>
+                                    <li class="mob-menu-soc__item"><a class="mob-menu-soc__link link" href="#">LinkedIn</a></li>
+                                </ul>
+                        </div>
         </div>
     </header>
     <!-- Main unique content -->
@@ -331,6 +355,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer__wrap">
+            <div class="footer__wrap--tablet">
             <div>
                 <a href="./" class="logo footer__logo link" lang="en">Web<span class="logo--white">Studio</span></a>
                 <address class="adress">    
@@ -374,6 +399,7 @@
                         </a>
                     </li>
                 </ul>
+            </div>
             </div>
             <form class="subscribe footer__subscribe">
                 <p class="subscribe__title">Подпишитесь на рассылку</p>

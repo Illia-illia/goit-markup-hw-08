@@ -8,6 +8,15 @@
     align-items: center;
 }
 
+.menu__list {
+    display: none;
+
+    @include tablet {
+        display: flex;
+    }
+
+}
+
 .header__item:not(:last-child) {
     margin-right: $margin50;
 }
@@ -25,48 +34,6 @@
 }
 
 /* Menu nav */
-.menu__button
-{
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-
-    &:hover,
-    &:focus{
-        fill: $link-accent;
-    }
-
-    @include tablet{
-        display: none;
-    }
-}
-
-.menu__icon-close{
-    display: none;
-}
-
-.menu__button.is-open{
-    .menu__icon-close{
-        display: block;
-    }
-
-    .menu__icon-open{
-        display: none;
-    }
-}
-
-.menu__list {
-    display: none;
-    
-    @include tablet{
-        display: flex;
-    }
-    
-}
-
 .menu__link {
     transition: color $duration250ms $time-function;
 
@@ -77,8 +44,100 @@
     @include font(500, 14px, 1.14, 0.02em);
 
     color: $main-text;
-}
-    .menu__link:hover,
-    .menu__link:focus {
+
+    &:hover,
+    &:focus {
         color: $link-accent;
+}
+}
+
+// mobile-menu
+.menu__button,
+.mob-menu__button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: $link-accent;
+    }
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.mob-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: $secondary-accent;
+}
+
+.mob-menu__button{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.mob-menu__item + .mob-menu__item{
+    margin-top: 32px;
+}
+
+.mob-menu__link{
+    transition: color $duration250ms $time-function;
+    @include font(500, 40px, 47/40, 00.02em);
+    color: $main-text;
+
+    &:hover,
+    &:focus{
+        color:$link-accent;
+    } 
+}
+
+.mob-menu-contacts{
+    margin-top: 302px;
+}
+
+.mob-menu-contacts__item + .mob-menu-contacts__item{
+    margin-top: 32px;
+}
+
+.mob-menu-contacts__link{
+    transition: color $duration250ms $time-function;
+    @include font(500, 24px, 28/24, 00.02em);
+    color: $secondary-text;
+
+    &:hover,
+    &:focus {
+            color: $link-accent;
+            @include font(500, 34px, 40/34, 00.02em);
+        }
+}
+
+.mob-menu-soc__list{
+    display: flex;
+    margin-top: 64px;
+}
+
+.mob-menu-soc__item + .mob-menu-soc__item{
+    margin-left: 20px;
+}
+
+.mob-menu-soc__link{
+    transition: color $duration250ms $time-function;
+    @include font(500, 18px, 22/18, 0.02em);
+    color:$link-accent;
+
+    &:hover,
+    &:focus{
+        color: $secondary-text;
+    }
 }
