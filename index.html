@@ -40,14 +40,16 @@
                                 </a>
                             </li>
                         </ul>
-                        <button type="button" class="menu__button" aria-expanded="false" data-menu-button>
-                            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <button type="button" class="menu__button">
+                            <svg width="40" height="40" aria-label="Кнопка открытия мобильного меню">
                                 <use class="menu__icon-open" href="./images/icons.svg#icon-menu_open"></use>
                             </svg>
                         </button>
-                        <div class="mob-menu">
+                        <div class="mob-menu is-hidden">
+                            <div class="container">
+                                <div class="mob-menu__top">
                                 <button type="button" class="mob-menu__button">
-                                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                                    <svg width="40" height="40" aria-label="кнопка закрытия мобильного меню">
                                         <use class="mob-menu__icon-close" href="./images/icons.svg#icon-menu_close"></use>
                                     </svg>
                                 </button>
@@ -56,6 +58,8 @@
                                     <li class="mob-menu__item"><a href="./portfolio.html" class="mob-menu__link link">Портфолио</a></li>
                                     <li class="mob-menu__item"><a href="./" class="mob-menu__link link">Контакты</a></li>
                                 </ul>
+                                </div>
+                                <div class="mob-menu__bottom">
                                 <ul class="mob-menu-contacts list">
                                     <li class="mob-menu-contacts__item">
                                         <a href="tel:+380961111111" class=" mob-menu-contacts__link link">+38 096 111 11 11</a>
@@ -70,6 +74,8 @@
                                     <li class="mob-menu-soc__item"><a class="mob-menu-soc__link link" href="#">Facebook</a></li>
                                     <li class="mob-menu-soc__item"><a class="mob-menu-soc__link link" href="#">LinkedIn</a></li>
                                 </ul>
+                                </div>
+                            </div>
                         </div>
         </div>
     </header>
