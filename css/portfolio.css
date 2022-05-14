@@ -176,17 +176,17 @@ ul {
   padding: 48px 40px;
   background-color: #ffffff;
 }
-@media screen and (orientation: landscape) {
-  .mob-menu {
-    text-align: center;
-  }
-}
 .mob-menu .container {
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
   overflow: auto;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
 }
 
 .mob-menu__button {
@@ -209,6 +209,12 @@ ul {
 }
 .mob-menu__link:hover, .mob-menu__link:focus {
   color: #2196f3;
+}
+
+@media screen and (orientation: landscape) {
+  .mob-menu__bottom {
+    margin-top: 40px;
+  }
 }
 
 .mob-menu-contacts__item + .mob-menu-contacts__item {

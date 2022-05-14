@@ -79,7 +79,7 @@
     padding: 48px 40px;
     background-color: $secondary-accent;
     @media screen and (orientation:landscape) {
-        text-align: center;
+        // text-align: center;
     }
     .container{
         display: flex;
@@ -87,6 +87,9 @@
         height: 100%;
         justify-content: space-between;
         overflow: auto;
+    }
+    @include tablet{
+        display: none;
     }
 }
 
@@ -109,6 +112,12 @@
     &:focus{
         color:$link-accent;
     } 
+}
+
+.mob-menu__bottom{
+    @media screen and (orientation:landscape) {
+        margin-top: 40px;
+    }
 }
 
 .mob-menu-contacts__item + .mob-menu-contacts__item{

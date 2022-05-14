@@ -1,12 +1,25 @@
 /* ==========MODAL=WINDOW========== */
 .modal {
+    width: 95%;
+    max-width: 450px;
+    height: auto;
+    overflow-y: scroll;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: rotateY(360deg) rotateX(360deg) translate(-50%, -50%) scale(1);
     transition: transform 1000ms;
-    width: 528px;
-    min-height: 581px;
+    @media screen and (orientation:landscape) {
+        overflow-y: scroll;
+        height: 95%;
+    }
+    @include tablet {
+        width: 450px;
+        height: 609px;
+        overflow-y: hidden;
+    }
+    // width: 528px;
+    // min-height: 581px;
     background-color: $secondary-accent;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),

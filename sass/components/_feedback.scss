@@ -16,7 +16,10 @@
 .feedback__title {
     margin-bottom: $margin12;
 
-    @include font(700, 20px, 1.15, null);
+    @include font(700, 20px, 30/20, null);
+    text-align: center;
+
+    // @include font(700, 20px, 1.15, null);
 
     color: $main-text;
 }
@@ -29,7 +32,8 @@
 
 .feedback__wrap {
     position: relative;
-    margin-bottom: $margin12;
+    margin-bottom: 10px;
+    // margin-bottom: $margin12;
 }
 
 .feedback__input {
