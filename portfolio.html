@@ -18,20 +18,20 @@
             <a href="./" class="logo header__logo link" lang="en">Web<span class="logo--black">Studio</span></a>
             <nav class="menu">
                 <ul class="menu__list list">
-                    <li class="header__item"><a href="./" class="menu__link link">Студия</a></li>
-                    <li class="header__item"><a href="./portfolio.html" class="menu__link link active">Портфолио</a></li>
+                    <li class="header__item"><a href="./" class="menu__link link active">Студия</a></li>
+                    <li class="header__item"><a href="./portfolio.html" class="menu__link link">Портфолио</a></li>
                     <li class="header__item"><a href="./" class="menu__link link">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="contacts list">
-                <li class="header__item">
+                <li class="contacts__item">
                     <a href="mailto:info@devstudio.com" class=" contacts__link link" lang="en">
                         <svg class="contacts__icon header__icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-posht">
                             </use>
                         </svg> info@devstudio.com</a>
                 </li>
-                <li class="header__item">
+                <li class="contacts__item">
                     <a href="tel:+380961111111" class=" contacts__link link">
                         <svg class="contacts__icon header__icon" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone">
@@ -41,6 +41,45 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="menu__button">
+                <svg width="40" height="40" aria-label="Кнопка открытия мобильного меню">
+                    <use class="menu__icon-open" href="./images/icons.svg#icon-menu_open"></use>
+                </svg>
+            </button>
+            <div class="mob-menu is-hidden">
+                <div class="container">
+                    <div class="mob-menu__top">
+                        <button type="button" class="mob-menu__button">
+                            <svg width="40" height="40" aria-label="кнопка закрытия мобильного меню">
+                                <use class="mob-menu__icon-close" href="./images/icons.svg#icon-menu_close"></use>
+                            </svg>
+                        </button>
+                        <ul class="mob-menu__list list">
+                            <li class="mob-menu__item"><a href="./" class="mob-menu__link link">Студия</a></li>
+                            <li class="mob-menu__item"><a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+                            </li>
+                            <li class="mob-menu__item"><a href="./" class="mob-menu__link link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="mob-menu__bottom">
+                        <ul class="mob-menu-contacts list">
+                            <li class="mob-menu-contacts__item">
+                                <a href="tel:+380961111111" class=" mob-menu-contacts__link link">+38 096 111 11 11</a>
+                            </li>
+                            <li class="mob-menu-contacts__item">
+                                <a href="mailto:info@devstudio.com" class=" mob-menu-contacts__link link"
+                                    lang="en">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="mob-menu-soc__list list">
+                            <li class="mob-menu-soc__item"><a class="mob-menu-soc__link link" href="#">Instagram</a></li>
+                            <li class="mob-menu-soc__item"><a class="mob-menu-soc__link link" href="#">Twitter</a></li>
+                            <li class="mob-menu-soc__item"><a class="mob-menu-soc__link link" href="#">Facebook</a></li>
+                            <li class="mob-menu-soc__item"><a class="mob-menu-soc__link link" href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <!-- Main unique content -->
@@ -60,7 +99,7 @@
                     <li class="gallery__item">
                         <a href="./portfolio.html" class="gallery__link link">
                             <div class="gallery__wrap">
-                                <img src="./images/partfolio/img1.jpg" alt="Веб-сайт на ноутбуке" width="370" class="img">
+                                <img src="./images/partfolio/img1.jpg" alt="Веб-сайт на ноутбуке" class="img">
                                 <p class="gallery__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -73,7 +112,7 @@
                     <li class="gallery__item">
                         <a href="./portfolio.html" class="gallery__link link"> 
                             <div class="gallery__wrap">
-                                <img src="./images/partfolio/img2.jpg" alt="Блок в баскетболе" width="370" class="img">
+                                <img src="./images/partfolio/img2.jpg" alt="Блок в баскетболе" class="img">
                                 <p class="gallery__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="gallery__ptext">
@@ -85,7 +124,7 @@
                     <li class="gallery__item">
                         <a href="./portfolio.html" class="gallery__link link">
                             <div class="gallery__wrap">
-                                <img src="./images/partfolio/img3.jpg" alt="Рыба и надпись" width="370" class="img">
+                                <img src="./images/partfolio/img3.jpg" alt="Рыба и надпись" class="img">
                                 <p class="gallery__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="gallery__ptext">
@@ -97,7 +136,7 @@
                     <li class="gallery__item">
                         <a href="./portfolio.html" class="gallery__link link">
                             <div class="gallery__wrap">
-                                <img src="./images/partfolio/img4.jpg" alt="Наушники" width="370" class="img">
+                                <img src="./images/partfolio/img4.jpg" alt="Наушники" class="img">
                                 <p class="gallery__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="gallery__ptext">
@@ -109,7 +148,7 @@
                     <li class="gallery__item">
                         <a href="./portfolio.html" class="gallery__link link">
                             <div class="gallery__wrap">
-                                <img src="./images/partfolio/img5.jpg" alt="Белая и коричневая коробка" width="370" class="img">
+                                <img src="./images/partfolio/img5.jpg" alt="Белая и коричневая коробка" class="img">
                                 <p class="gallery__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="gallery__ptext">
@@ -121,7 +160,7 @@
                     <li class="gallery__item">
                         <a href="./portfolio.html" class="gallery__link link">
                             <div class="gallery__wrap">
-                                <img src="./images/partfolio/img6.jpg" alt="Сайт на мониторе" width="370" class="img">
+                                <img src="./images/partfolio/img6.jpg" alt="Сайт на мониторе" class="img">
                                 <p class="gallery__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="gallery__ptext">
@@ -133,7 +172,7 @@
                     <li class="gallery__item">
                         <a href="./portfolio.html" class="gallery__link link">
                             <div class="gallery__wrap">
-                                <img src="./images/partfolio/img7.jpg" alt="Открытый журнал" width="370" class="img">
+                                <img src="./images/partfolio/img7.jpg" alt="Открытый журнал" class="img">
                                 <p class="gallery__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="gallery__ptext">
@@ -145,7 +184,7 @@
                     <li class="gallery__item">
                         <a href="./portfolio.html" class="gallery__link link">
                             <div class="gallery__wrap">
-                                <img src="./images/partfolio/img8.jpg" alt="Бирка с подписью" width="370" class="img">
+                                <img src="./images/partfolio/img8.jpg" alt="Бирка с подписью" class="img">
                                 <p class="gallery__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="gallery__ptext">
@@ -157,7 +196,7 @@
                     <li class="gallery__item">
                         <a href="./portfolio.html" class="gallery__link link">
                             <div class="gallery__wrap">
-                                <img src="./images/partfolio/img9.jpg" alt="Пальцы на клавиатуре ноутбука" width="370" class="img">
+                                <img src="./images/partfolio/img9.jpg" alt="Пальцы на клавиатуре ноутбука" class="img">
                                 <p class="gallery__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="gallery__ptext">
@@ -174,52 +213,54 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer__wrap">
-            <div>
-                <a href="./" class="logo footer__logo link" lang="en">Web<span class="logo--white">Studio</span></a>
-                <address class="adress">
-                    <ul class="list">
-                        <li class="adress__item"><a href="https://goo.gl/maps/gdu9YAMxJbdQwpBC7" target="_blank"
-                                rel="noreferrer noopener nofollow" class="adress__link adress__link--white link">г. Киев,
-                                пр-т Леси Украинки, 26</a></li>
-                        <li class="adress__item"><a href="mailto:info@example.com" class="adress__link link"
-                                lang="en">info@example.com</a></li>
-                        <li class="adress__item"><a href="tel:+380991111111" class="adress__link link">+38 099 111 11 11</a>
+            <div class="footer__wrap--tablet">
+                <div>
+                    <a href="./" class="logo footer__logo link" lang="en">Web<span class="logo--white">Studio</span></a>
+                    <address class="adress">
+                        <ul class="list">
+                            <li class="adress__item"><a href="https://goo.gl/maps/gdu9YAMxJbdQwpBC7" target="_blank"
+                                    rel="noreferrer noopener nofollow" class="adress__link adress__link--white link">г.
+                                    Киев, пр-т Леси Украинки, 26</a></li>
+                            <li class="adress__item"><a href="mailto:info@example.com" class="adress__link link"
+                                    lang="en">info@example.com</a></li>
+                            <li class="adress__item"><a href="tel:+380991111111" class="adress__link link">+38 099 111 11
+                                    11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="join footer__join">
+                    <p class="join__title">присоединяйтесь</p>
+                    <ul class="join__list list">
+                        <li class="join__item">
+                            <a href="" class="join__link link">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join__item">
+                            <a href="" class="join__link link">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join__item">
+                            <a href="" class="join__link link">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join__item">
+                            <a href="" class="join__link link">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="join footer__join">
-                <p class="join__title">присоединяйтесь</p>
-                <ul class="join__list list">
-                    <li class="join__item">
-                        <a href="" class="join__link link">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__item">
-                        <a href="" class="join__link link">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__item">
-                        <a href="" class="join__link link">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__item">
-                        <a href="" class="join__link link">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <form class="subscribe footer__subscribe">
                 <p class="subscribe__title">Подпишитесь на рассылку</p>
@@ -232,5 +273,6 @@
             </form>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

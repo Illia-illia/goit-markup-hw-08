@@ -1,13 +1,17 @@
 .checkbox__label,
 .checkbox__link {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
     vertical-align: middle;
     text-align: center;
+    @include desktop{
+        // display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     @include font(null, 11px, 14/12, null);
-    // @include font(null, 14px, 1.71, null);
+    @include desktop {
+        @include font(null, 14px, 24/14, null);
+    }
 
     color: $secondary-text;
 }
@@ -17,6 +21,9 @@
 }
 
 .checkbox__label {
+    @include desktop {
+        display: flex;
+    }
     display: block;
     margin-top: $margin20;
     margin-bottom: $margin30;
@@ -35,9 +42,13 @@
     display: inline-flex;
     vertical-align: middle;
 
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    @include desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
 
     .checkbox:checked + .checkbox__label & {
             background-color: $link-accent;
@@ -48,8 +59,6 @@
 .checkbox__icon {
     fill: transparent;
     cursor: pointer;
-    width: 16px;
-    height: 15px;
 
     .checkbox:checked + .checkbox__label & {
             fill: #EEEEEE;

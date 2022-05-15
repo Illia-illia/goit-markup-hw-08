@@ -1,7 +1,11 @@
 /* ==========Portfolio =================*/
 .works {
-    padding-top: $padding94;
-    padding-bottom: $padding94;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include desktop{
+        padding-top: $padding94;
+        padding-bottom: $padding94;
+    }
 
     &__btn:hover,
     &__btn:focus {
@@ -15,8 +19,23 @@
 
 .works__list {
     display: flex;
-    margin-bottom: $margin50;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    @include tablet {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    @include desktop{
+        margin-bottom: $margin50;
+    }
+
+}
+
+.works__item{
+    margin-bottom: 15px;
+    @include tablet{
+        margin-bottom: 0;
+    }
 }
 
 .works__item:not(:last-child) {
@@ -35,7 +54,7 @@
     border-radius: 4px;
     border: $back-button;
 
-    @include font(500, 16px, 1.62, 0.03em);
+    @include font(500, 16px, 26/16, 0.03em);
     cursor: pointer;
 
     background: $back-button;
@@ -43,10 +62,12 @@
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: calc(-1 * $padding30);
     margin-bottom: calc(-1 * $padding30);
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: calc(-1 * $padding30);
+    }
 
     &__link:hover,
     &__link:focus {
@@ -58,8 +79,15 @@
 }
 
 .gallery__item {
-    flex-basis: calc(100% / 3 - $padding30);
-    margin-right: $padding30;
+    max-width: 450px;
+    @include tablet{
+        flex-basis: calc(100% / 2 - $padding30);
+        margin-right: $padding30;
+    }
+    @include desktop{
+        flex-basis: calc(100% / 3 - $padding30);
+    }
+
     margin-bottom: $padding30;
 }
 
@@ -78,13 +106,27 @@
     position: absolute;
     top: 0;
     left: 0;
-
-    padding-top: 63px;
+    height: 294px;
+    padding-top: 49px;
     padding-right: 24px;
-    padding-bottom: 63px;
+    padding-bottom: 77px;
     padding-left: 24px;
 
-    @include font(400, 18px, 1.56, null);
+    @media screen and (max-width:380px) {
+        @include font(400, 14px, 28/18, null);
+    }
+
+    @include tablet{
+        padding-top: 49px;
+        padding-bottom: 77px;
+    }
+
+    @include desktop{
+        padding-top: 63px;
+        padding-bottom: 63px;
+    }
+
+    @include font(400, 18px, 28/18, null);
 
     background-color: $portfolio-bg;
     color: $secondary-accent;
@@ -108,7 +150,7 @@
 .gallery__capt {
     color: $main-text;
 
-    @include font(700, 18px, 2, 0.06em);
+    @include font(700, 18px, 36/18, 0.06em);
 
     margin-bottom: 4px;
 }
@@ -116,5 +158,5 @@
 .gallery__text {
     color: $secondary-text;
 
-    @include font(400, 16px, 1.87, null);
+    @include font(400, 16px, 30/16, null);
 }
