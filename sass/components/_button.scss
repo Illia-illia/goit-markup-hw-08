@@ -4,7 +4,7 @@
 
   border-radius: 4px;
   border: transparent;
-  padding: 10px $padding32;
+  padding: $margin10 $padding32;
   min-width: 200px;
   
   @include font(700, 16px, 30/16, 0.06em);

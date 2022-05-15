@@ -1,12 +1,13 @@
 .section-caption {
     margin-bottom: 30px;
     @include font(null, 28px, 33/28, null);
-
+    
+    text-align: center;
+    
+    color: $main-text;
+    
     @include desktop{
         margin-bottom: $margin50;
         @include font(null, 36px, 42/36, null);
     }
-    text-align: center;
-
-    color: $main-text;
 }

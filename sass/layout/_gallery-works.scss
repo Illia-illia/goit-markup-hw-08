@@ -2,18 +2,19 @@
 .works {
     padding-top: 60px;
     padding-bottom: 60px;
-    @include desktop{
-        padding-top: $padding94;
-        padding-bottom: $padding94;
-    }
 
     &__btn:hover,
     &__btn:focus {
         background: $link-accent;
         color: $secondary-accent;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-            0px 1px 2px rgba(0, 0, 0, 0.08),
-            0px 2px 2px rgba(0, 0, 0, 0.12);
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    @include desktop{
+        padding-top: $padding94;
+        padding-bottom: $padding94;
     }
 }
 
@@ -21,6 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 25px;
+
     @include tablet {
         margin-bottom: 30px;
         justify-content: center;
@@ -28,7 +30,6 @@
     @include desktop{
         margin-bottom: $margin50;
     }
-
 }
 
 .works__item{
@@ -63,32 +64,34 @@
 
 .gallery {
     margin-bottom: calc(-1 * $padding30);
-    @include tablet{
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: calc(-1 * $padding30);
-    }
 
     &__link:hover,
     &__link:focus {
         display: block;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-            0px 4px 4px rgba(0, 0, 0, 0.06),
-            1px 4px 6px rgba(0, 0, 0, 0.16);
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: calc(-1 * $padding30);
     }
 }
 
 .gallery__item {
     max-width: 450px;
+    margin-bottom: $padding30;
+
     @include tablet{
         flex-basis: calc(100% / 2 - $padding30);
         margin-right: $padding30;
     }
+
     @include desktop{
         flex-basis: calc(100% / 3 - $padding30);
     }
-
-    margin-bottom: $padding30;
 }
 
 .gallery__link {
@@ -112,6 +115,16 @@
     padding-bottom: 77px;
     padding-left: 24px;
 
+    @include font(400, 18px, 28/18, null);
+
+    background-color: $portfolio-bg;
+    color: $secondary-accent;
+
+    .gallery__link:hover &,
+    .gallery__link:focus & {
+        transform: translateY(0);
+    }
+
     @media screen and (max-width:380px) {
         @include font(400, 14px, 28/18, null);
     }
@@ -124,16 +137,6 @@
     @include desktop{
         padding-top: 63px;
         padding-bottom: 63px;
-    }
-
-    @include font(400, 18px, 28/18, null);
-
-    background-color: $portfolio-bg;
-    color: $secondary-accent;
-
-    .gallery__link:hover &,
-    .gallery__link:focus & {
-        transform: translateY(0);
     }
 }
 

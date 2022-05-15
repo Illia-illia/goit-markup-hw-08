@@ -2,6 +2,7 @@
 .advantage {
     padding-top: 60px;
     padding-bottom: 60px;
+
     @include desktop{
         padding-top: $padding94;
         padding-bottom: $padding94;
@@ -19,6 +20,7 @@
 
 .advantage__item:not(:last-child) {
     margin-bottom: 30px;
+
     @include tablet{
         margin-right: $padding30;
     }
@@ -31,25 +33,20 @@
 
     max-width: 450px;
     height: 120px;
+
+    background-color: $back-button;
+
     @include tablet{
         max-width: 354px;
     }
+
     @include desktop{
         width: 270px;
     }
-
-    background-color: $back-button;
 }
 
 .advantage__caption {
     max-width: 450px;
-    @include tablet {
-        max-width: 354px;
-        text-align: left;
-    }
-    @include desktop{
-        max-width: 270px;
-    }
     margin-top: $margin30;
     margin-bottom: $margin10;
 
@@ -58,18 +55,29 @@
     text-align: center;
 
     color: var(--main-text);
+
+    @include tablet {
+        max-width: 354px;
+        text-align: left;
+    }
+
+    @include desktop{
+        max-width: 270px;
+    }
 }
 
 .advantage__text {
     max-width: 450px;
+
+    @include font(400, 14px, 24/14, null);
+    
+    color: $secondary-text;
+
     @include tablet {
         max-width: 354px;
     }
+    
     @include desktop{
         max-width: 270px;
     }
-
-    @include font(400, 14px, 24/14, null);
-
-    color: $secondary-text;
 }

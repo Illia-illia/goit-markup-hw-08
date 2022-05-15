@@ -7,19 +7,18 @@
 
 .footer__wrap {
     @include tablet{
-        .footer__wrap--tablet {
-            display: flex;
-            align-items: baseline;
-            justify-content: space-around;
-            margin-bottom: 60px;
-        }
+    .footer__wrap--tablet {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+        margin-bottom: 60px;
+    }
     }
 
     @include desktop{
     display: flex;
     align-items: baseline;
     }
-
 }
 
 .footer__logo {

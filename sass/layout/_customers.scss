@@ -4,14 +4,14 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @include desktop{
-        padding-top: $padding94;
-        padding-bottom: $padding94;
-    }
-
     &__link:hover {
         fill: $link-accent;
         border: 1px solid $link-accent;
+    }
+
+    @include desktop{
+        padding-top: $padding94;
+        padding-bottom: $padding94;
     }
 }
 
@@ -21,6 +21,7 @@
     justify-content: center;
     margin-bottom: -30px;
     margin-left: -30px;
+
     @include desktop {
         margin-bottom: 0;
         flex-wrap: nowrap;
@@ -29,29 +30,24 @@
 
 .customers__item {
     width: calc(100% / 2 - $margin30);
+    
+    margin-bottom: $margin30;
+    margin-left: $margin30;
 
     @include tablet {
         width: calc(100% / 3 - $margin30);
     }
+
     @include desktop {
         width: 100%;
     }
-
-    margin-bottom: $margin30;
-    margin-left: $margin30;
 }
 
 .customers__link {
     transition: fill $duration250ms $time-function,
-        border $duration250ms $time-function;
+    border $duration250ms $time-function;
 
     max-width: 210px;
-    @include tablet{
-        max-width: 226px;
-    }
-    @include desktop {
-        width: 170px;
-    }
     height: 92px;
     border: 1px solid $icon-color;
     border-radius: 4px;
@@ -59,4 +55,11 @@
     justify-content: center;
     align-items: center;
     fill: $icon-color;
+
+    @include tablet{
+        max-width: 226px;
+    }
+    @include desktop {
+        width: 170px;
+    }
 }

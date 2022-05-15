@@ -2,6 +2,21 @@
 .hero {
     max-width: 480px;
     height: 400px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: $padding118;
+    padding-bottom: $padding118;
+
+    text-align: center;
+
+    background-color: $hero-bg;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     @include tablet{
         max-width: 768px;
     }
@@ -12,20 +27,6 @@
         padding-top: $padding200;
         padding-bottom: $padding200;
     }
-    background-color: $hero-bg;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/hero-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: $padding118;
-    padding-bottom: $padding118;
-
-    text-align: center;
 }
 
 .hero__capt {
@@ -37,10 +38,10 @@
     @include font(900, 26px, 42/26, 0.06em);
     text-transform: uppercase;
 
+    color: $secondary-accent;
+
     @include desktop{
         @include font(null, 44px, 60/44, null);
         max-width: 700px;
     }
-
-    color: $secondary-accent;
 }

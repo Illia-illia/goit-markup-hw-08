@@ -3,14 +3,16 @@
   background-color: $back-button;
     padding-top: 60px;
     padding-bottom: 60px;
-  
-  // padding-top: $padding94;
-  // padding-bottom: $padding94;
 
   &__soc-link:hover,
   &__soc-link:focus {
     background-color: $link-accent;
     fill: $secondary-accent;
+  }
+
+  @include desktop{
+    padding-top: $padding94;
+    padding-bottom: $padding94;
   }
 }
 
@@ -26,43 +28,42 @@
 .team__item {
   max-width: 450px;
   margin-bottom: $padding30;
+
+
+  background-color: $secondary-accent;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+
   @include tablet{
     max-width: 354px;
     flex-basis: calc(100% / 2 - $padding30);
     margin-right: $padding30;
   }
+
   @include desktop{
     width: 270px;
     height: 428px;
     flex-basis: calc(100% / 4 - $padding30);
   }
-
-  background-color: $secondary-accent;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team__padding {
-  text-align: center;
   padding: $padding30;
+  text-align: center;
 }
 
 .team__caption {
-  color: $main-text;
-
-  @include font(500, 16px, 19/16, null);
-
   margin-bottom: $margin10;
+  @include font(500, 16px, 19/16, null);
+  color: $main-text;
 }
 
 .team__text {
-  color: $secondary-text;
-
-  @include font(400, 16px, 19/16, null);
-
   margin-bottom: $margin16;
+  @include font(400, 16px, 19/16, null);
+  color: $secondary-text;
 }
 
 .team__soc-list {
