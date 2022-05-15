@@ -3,6 +3,7 @@
     color: $link-accent;
     position: relative;
     
+    @include tablet {
     &::after {
         content: '';
         position: absolute;
@@ -14,5 +15,6 @@
         border-radius: 2px;
 
         background-color: $link-accent;
+    }
     }
 }
