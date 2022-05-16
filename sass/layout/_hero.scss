@@ -1,6 +1,5 @@
 /* ===========HERO=========== */
 .hero {
-    max-width: 480px;
     height: 400px;
 
     margin-left: auto;
@@ -25,7 +24,6 @@
     }
 
     @include tablet{
-        max-width: 768px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)), url(../images/hero-bg/hero-tab.jpg);
 

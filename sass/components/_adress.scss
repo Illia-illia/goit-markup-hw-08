@@ -17,6 +17,10 @@
     &:focus {
         color: $link-accent;
         }
+    
+    @include desktop{
+        text-align: left;
+    }
 }
 
 .adress__link--white {

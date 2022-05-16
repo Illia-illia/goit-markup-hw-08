@@ -26,6 +26,9 @@
     margin-bottom: $margin20;
 
     text-align: center;
+    @include desktop{
+        text-align: left;
+    }
 }
 
 .footer__subscribe {
